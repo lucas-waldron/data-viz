@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Data Visualization</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="#">A Town Divided</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Unemployment</a></li>
+                            <li><a href="#">Mining History</a></li>
+                    </ul>
+            </div>
+            </div>
+      </nav>
+      
+      <div class="container">
+        <p>Patagonia, AZ is a town divided over the mining industry. These visualizations contextualize the conflict in the town by highlighting economic, environmental, and historical trends in Patagonia, Santa Cruz County, and across Arizona. </p>
+        
+        <h3>Unemployment rate by Arizona county</h3>
+          
+        <p>Santa Cruz County's unemployment rate has hovered at about twice the unemployment rate of all of Arizona for the last ten years.</p>
+          
+            <div class="viz-frame">
+                
+                <iframe src="unemployment.html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+          
+          
+            </div>
+          
+          <h3>Active Mines in Santa Cruz County (1840 - 2016)</h3>
+          
+            <p>Mining for gold, silver, ore, and other minerals began in the 17th century with Jesuit missionaries in the region. Mining operations peaked in the early 20th century and largely shut down by the mid-1970s. Some of these mines continue to leak acid during heavy rains.</p>
+          
+           <div class="viz-frame">
+                
+               <iframe width="100%" height="500" frameborder="0" src="https://lucasw.carto.com/viz/ca3d4c78-b766-11e6-8aee-0e98b61680bf/embed_map" ></iframe>
+          
+          
+            </div>
+      
+      
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
