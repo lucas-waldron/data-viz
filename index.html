@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,8 +19,88 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+   <style>
+    
+           .container1{
+            
+            background-image:url("https://cartocdn-ashbu.global.ssl.fastly.net/lucasw/api/v1/map/static/bbox/86d7f752bb68c819f7950b28d9934e1f:1481047133655/-110.77415943145752,31.531799302337,-110.73291778564453,31.54983095642334/2000/1200.png");
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+            
+            height: 80vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    
+        header{
+            color: #ffffff;
+        
+            font-family: 'catamaran', sans-serif;
+            text-align: center;
+            padding-top: 400px;
+            padding-top: 45vh;
+       
+       }
+       
+       h2{
+           
+           font-size: 5em;
+           font-weight: 700;
+       }
+       
+       .subhead{
+           
+           font-size: 1.2em;
+       }
+       body {
+           margin: 0;
+           padding: 0;
+       }
+       
+       #three{
+           margin: 0;
+           padding: 40px 0 5px 0;
+           
+           
+       } 
+    
+    
+       .letters{
+           
+           font-size: 1.0em;
+           font-weight: 700;
+           color: #50b6d1;
+           
+       }
+       .dates{
+           font-weight: 700;
+       }
+    
+       .source{
+           font-size: .6em;
+           text-align: right;
+       }
+       
+       .container {
+           
+           padding-bottom: 40px;
+           padding-top: 40px;
+           max-width: 80%;
+           font-family: 'catamaran', sans-serif;
+       }
+       
+    
+    
+    
+    
+    </style>
+    
+    
+    
+    
   <body>
-   <nav class="navbar navbar-default">
+   <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -29,33 +110,46 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                 <a class="navbar-brand" href="#">A Town Divided</a>
+                 
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                            <li class="active"><a href="#one">Unemployment</a></li>
+                            
                             <li><a href="#two">Mining History</a></li>
+                            <li><a href="#three">Stock History</a></li>
+                            <li><a href="#one">Unemployment</a></li>
+                            <li><a href="#four">Urbanization</a></li>
+                            <li><a href="#contact">Contact</a></li>
                     </ul>
             </div>
             </div>
       </nav>
       
-      <div class="container">
-        <p>Patagonia, AZ is a town divided over the mining industry. These visualizations contextualize the conflict in the town by highlighting economic, environmental, and historical trends in Patagonia, Santa Cruz County, and across Arizona. </p>
+      <div class="container1">
+      
+        <header>
+              
+            <h2>A Town Divided</h2>
+            
+            
+            <p class="subhead">The struggle between restoration and extraction in the Patagonia Mountains.</p>
+          
+          
+          </header>
+      
+      
+      
+      
+      </div>
+      
+      
+      
+      <div class="container container-fluid">
+     
+            <p>Patagonia, AZ is a town divided over the mining industry. These visualizations contextualize the conflict in the town by highlighting economic, environmental, and historical trends in Patagonia, Santa Cruz County, and across Arizona. </p>
+          
+          <h3 id="two">Active Mines in Santa Cruz County (1840 - 2016)</h3>
         
-        <h3 id="one">Unemployment rate by Arizona county</h3>
-          
-        <p>Santa Cruz County's unemployment rate has hovered at about twice the unemployment rate of all of Arizona for the last ten years.</p>
-          
-          
-            <div class="viz-frame">
-                
-                <iframe src="unemployment.html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-          
-          
-            </div>
-          
-        <h3 id="two">Active Mines in Santa Cruz County (1840 - 2016)</h3>
           
             <p>Mining for gold, silver, ore, and other minerals began in the 17th century with Jesuit missionaries in the region. Mining operations peaked in the early 20th century and largely shut down by the mid-1970s. Some of these mines continue to leak acid during heavy rains.</p>
           <br>
@@ -66,6 +160,68 @@
           
           
             </div>
+            
+            <p class="source">Data Source: USGS</p>
+          
+          <h3 id="three">Arizona Mining stock history</h3>
+          <p><em>Through Dec. 2, 2016</em><p>
+          
+            <p>Arizona Mining is a publicly traded company on the Toronoto stock exchange, and is headquartered in Vancouver, Canada.</p>
+          
+          
+           <div>
+                
+               <img src="assets/stock-graph.png" class="img-responsive">
+          
+          
+            </div>
+                <p class="source">Data Source: Yahoo Finance</p>
+          
+            <div>
+                <div class="list">
+                    <p><span class="letters">A. </span> <span class="dates">June 5, 2015: </span>Wildcat Silver changed its name to "Arizona Mining Inc" and began being traded as AZ:TO on the Tornonto stock exchange.</p>
+                    <p><span class="letters">B. </span><span class="dates"> Jan. 26, 2016: </span>Arizona Mining Inc. acquired 300 acres of mining claims. Part of the deal requires that the company assume all environmental liability for the existing abandoned mines on the land. The company began exploratory drilling on this land, called the Taylor Deposit, shortly after the acquisition.  </p>
+                    <p><span class="letters">C. </span><span class="dates">Sept. 7, 2016: </span>The Forest Service begins a 30-day comment public comment period regarding Arizona Mining Inc's proposal to drill eight exploratory holes on federal land adjacent to the Taylor Deposit. </p>
+                    
+                    
+                    
+        
+                </div>
+                
+            </div>
+          
+        <h3 id="one">Unemployment rate by Arizona county</h3>
+          
+            <p>Santa Cruz County's unemployment rate has hovered at about twice the unemployment rate of all of Arizona for the last ten years.</p>
+          
+          
+                <div class="viz-frame">
+                
+                    <iframe src="unemployment.html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+          
+          
+                </div>
+            
+            <p class="source">Data Source: Bureau of Labor Statistics</p>
+          
+        <h3 id="four">Urbanization of Arizona (1910 - 2010) </h3>
+          
+            <p>Some town residents in Patagonia worry that small towns in the state are slowly dying, with young people moving to cities. They think a revived mining industry might create jobs to keep young people in town. Like most of the country, Arizona has urbanized heavily in last 100 years.</p>
+          
+          
+            <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video autoplay loop class="embed-responsive-item">
+                    <source src="assets/rural-urban-h264.mov" type="video/mp4">
+                </video>
+            </div>
+            
+            <p class="source">Data Source: US Census Bureau</p>
+          
+          <hr>
+          
+        <h3 id="contact">Contact</h3>
+           <p>These visualizations were created by Lucas Waldron for Intro to Data Visualization at UC Berkeley's Graduate School of Journalism with the assistance of instructor Peter Aldhous.</p>
+          <p>e: lucashwaldron@gmail.com</p>
       
       
       </div>
